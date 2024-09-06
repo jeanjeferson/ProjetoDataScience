@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Easypanel Static Sample</title>
-  </head>
-  <body>
-    <h1>Easypanel Static Sample</h1>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendAi - Agende com Inteligência</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Revolucione seus agendamentos com IA</h1>
+            <p>Automatize, simplifique e cresça seu negócio de beleza com o AgendAi</p>
+            <button class="cta-button">Comece Grátis Agora</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Funcionalidades e Diferenciais</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Agendamento Inteligente</h3>
+                    <p>IA que aprende as preferências dos seus clientes e otimiza sua agenda.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Integração com WhatsApp</h3>
+                    <p>Confirmações automáticas e reagendamentos fáceis via chat.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Gestão Simplificada</h3>
+                    <p>Visão geral em tempo real e relatórios intuitivos para melhorar seu desempenho.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Personalização Automática</h3>
+                    <p>Recomendações baseadas no histórico do cliente e campanhas direcionadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-demo">
+        <div class="container">
+            <h2>Veja o AgendAi em ação</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2>Nossos Valores e Quem Somos</h2>
+            <p>Na AgendAi, acreditamos que a tecnologia deve simplificar sua vida, não complicá-la. Nossa missão é empoderar profissionais de beleza com ferramentas inteligentes e fáceis de usar.</p>
+            <div class="values-grid">
+                <div class="value-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Inovação Constante</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-users"></i>
+                    <span>Foco no Cliente</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Simplicidade e Eficiência</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Crescimento Mútuo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Planos e Preços</h2>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <h3>Básico</h3>
+                    <p class="price">R$ 99/mês</p>
+                    <ul>
+                        <li>Até 100 agendamentos/mês</li>
+                        <li>Integração WhatsApp</li>
+                        <li>Relatórios básicos</li>
+                    </ul>
+                    <button>Escolher Plano</button>
+                </div>
+                <div class="pricing-item featured">
+                    <h3>Pro</h3>
+                    <p class="price">R$ 199/mês</p>
+                    <ul>
+                        <li>Até 500 agendamentos/mês</li>
+                        <li>Todas as funcionalidades do Básico</li>
+                        <li>IA avançada para otimização</li>
+                        <li>Campanhas de marketing</li>
+                    </ul>
+                    <button>Escolher Plano</button>
+                </div>
+                <div class="pricing-item">
+                    <h3>Enterprise</h3>
+                    <p class="price">Sob Consulta</p>
+                    <ul>
+                        <li>Agendamentos ilimitados</li>
+                        <li>Todas as funcionalidades do Pro</li>
+                        <li>Suporte prioritário</li>
+                        <li>Personalização completa</li>
+                    </ul>
+                    <button>Fale Conosco</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <!-- FAQ items will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot">
+        <button id="chatbot-toggle" class="chatbot-button">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div id="chatbot-window" class="chatbot-window hidden">
+            <div class="chatbot-header">
+                <h3>Chat de Suporte</h3>
+                <button id="chatbot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages">
+                <p>Olá! Como posso ajudar você hoje?</p>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" placeholder="Digite sua mensagem...">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgendAi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
